@@ -10,3 +10,23 @@ let userDetail : {name:string;age:number ; salary:number} = {
     age:22,
     salary:1000000
 }
+// ======================================================================
+// Interface
+// Interface always represents on first letter uppercase
+
+interface Details {
+    name : string;
+    age : number;
+    salary : number
+}
+// We can reuse the interface method "Details".
+let detailsUser : Details = {
+    name : "shaheer",
+    age : 22,
+    salary : 1000000
+}
+let detailsAdmin : Details = {
+    name : "adam",
+    age : 28,
+    salary : 12000000
+}
