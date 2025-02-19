@@ -40,3 +40,20 @@ let detailsAdmin : Details = {
 }
 
 // ======================================================================
+
+// Type 
+type AllDetail = {
+    name : string;
+    age : number;
+    salary : number,
+    getName : ()=>void
+}
+
+let userAllDetail : AllDetail = {
+    name : "shaheer",
+    age : 22,
+    salary : 2500000,
+    getName() {
+        console.log(this.name)
+    },
+}
