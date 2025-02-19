@@ -17,16 +17,26 @@ let userDetail : {name:string;age:number ; salary:number} = {
 interface Details {
     name : string;
     age : number;
-    salary : number
+    salary : number;
+    getName : () => void;
 }
 // We can reuse the interface method "Details".
 let detailsUser : Details = {
     name : "shaheer",
     age : 22,
-    salary : 1000000
+    salary : 1000000,
+    getName() {
+        console.log(this.name);
+    },
 }
 let detailsAdmin : Details = {
     name : "adam",
     age : 28,
-    salary : 12000000
+    salary : 12000000,
+    getName() {
+      console.log(this.name);
+        
+    },
 }
+
+// ======================================================================
