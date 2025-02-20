@@ -86,16 +86,16 @@ switch(day){
     case 1:
         console.log("Monday");
         break;
-    case 2:
-        console.log("Tuesday");
-        break;
-    default:
-        console.log("Another day");
-        break;
-}
-
-// Functions
-function sum(a : number , b : number , c ?: number) : number{
+        case 2:
+            console.log("Tuesday");
+            break;
+            default:
+                console.log("Another day");
+                break;
+            }
+            
+            // Functions
+            function sum(a : number , b : number , c ?: number) : number{
     return  c? a+b+c :a+b; // Optional parameter
 }
 console.log(sum(1,2))
@@ -105,3 +105,21 @@ function myName( name : string="shaheer") :string {
     return name;
 }
 console.log(myName())
+
+// ======================================================================
+// ============================= OOPS ===================================
+// Class and objects
+class Person{
+    name:string;
+    age : number;
+    constructor(name:string,age:number){
+        this.name = name;
+        this.age = age;
+    }
+    getName():void{
+        console.log(`${this.name}`);
+    }
+}
+
+const person1 = new Person("shaheer",22);
+person1.getName();
