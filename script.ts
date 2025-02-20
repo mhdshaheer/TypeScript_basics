@@ -177,3 +177,12 @@ function add(num1: any, num2: any):any{
 }
 add(1,4);
 add("1","4");
+
+// Generics
+
+function getNum<T>(num : T):T{
+    return num
+}
+getNum<string>("77");
+getNum<number>(77);
+
