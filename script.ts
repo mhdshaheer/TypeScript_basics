@@ -100,4 +100,8 @@ function sum(a : number , b : number , c ?: number) : number{
 }
 console.log(sum(1,2))
 
-
+// Default Parameter
+function myName( name : string="shaheer") :string {
+    return name;
+}
+console.log(myName())
