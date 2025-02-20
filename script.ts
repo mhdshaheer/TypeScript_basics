@@ -154,3 +154,10 @@ class Dogs extends Animal{
 }
 const dog = new Dogs();
 dog.sound();
+
+// Import and Export modules
+// export function addSum(num1:number,num2:number):number{
+//     return num1+num2;
+// }
+// import {addSum} from './path'
+// addSum(1,5);
