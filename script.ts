@@ -161,3 +161,19 @@ dog.sound();
 // }
 // import {addSum} from './path'
 // addSum(1,5);
+
+
+// Named Types
+// Custom data type creation
+type resStatus = 'Pending' | 'Completed' | 'Failed';
+
+let paymentStatus : resStatus = 'Failed';
+
+// Function Overloading
+function add(num1 :string, num2:string): string;
+function add(num1 :number ,num2:number): number;
+function add(num1: any, num2: any):any{
+    return num1+num2;
+}
+add(1,4);
+add("1","4");
