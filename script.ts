@@ -108,6 +108,7 @@ console.log(myName())
 
 // ======================================================================
 // ============================= OOPS ===================================
+
 // Class and objects
 class Person{
     name:string;
@@ -125,7 +126,6 @@ const person1 = new Person("shaheer",22);
 person1.getName();
 
 // Inheritance
-
 class Employee extends Person{
     role : string;
     constructor(name:string,age:number,role:string){
@@ -138,3 +138,19 @@ class Employee extends Person{
 }
 const emp = new Employee("Shaheer",22,"Software Engineer");
 emp.getRole();
+
+// Polymorphism
+// Polymorphism allows a child class to override a method from the parent class.
+
+class Animal{
+    sound():void{
+        console.log("Normal animal sound");
+    }
+}
+class Dogs extends Animal{
+    sound():void{
+        console.log("Bark! Bark!");
+    }
+}
+const dog = new Dogs();
+dog.sound();
