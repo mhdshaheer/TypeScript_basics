@@ -123,3 +123,18 @@ class Person{
 
 const person1 = new Person("shaheer",22);
 person1.getName();
+
+// Inheritance
+
+class Employee extends Person{
+    role : string;
+    constructor(name:string,age:number,role:string){
+        super(name,age);
+        this.role = role;
+    }
+    getRole(){
+        console.log(`${this.name} : ${this.role}`);
+    }
+}
+const emp = new Employee("Shaheer",22,"Software Engineer");
+emp.getRole();
