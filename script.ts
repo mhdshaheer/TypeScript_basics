@@ -10,6 +10,16 @@ let userDetail : {name:string;age:number ; salary:number} = {
     age:22,
     salary:1000000
 }
+
+// Type intference
+// If you don't explicitly mention a type, TypeScript infers it based on the value.
+let collage = "EKCTC";
+
+// Type Any
+// If you don’t know the type in advance, use any, but it's not recommended.
+let randomValue:any = 123456789;
+randomValue = "hai"
+
 // ======================================================================
 // Interface
 // Interface always represents on first letter uppercase
