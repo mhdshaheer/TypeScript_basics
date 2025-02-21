@@ -187,13 +187,25 @@ getNum<string>("77");
 getNum<number>(77);
 
 // Type combination
-type detailsOfUser = {
+// type detailsOfUser = {
+//     name : string;
+//     age : number;
+// }
+
+// type detailsOfAdmin = detailsOfUser & {
+//     role : string;
+// }
+
+// Interface combination
+interface detailsOfUser{
     name : string;
     age : number;
 }
 
-type detailsOfAdmin = detailsOfUser & {
+interface detailsOfAdmin extends detailsOfUser{
     role : string;
 }
+
+
 
 
