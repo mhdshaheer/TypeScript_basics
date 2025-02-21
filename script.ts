@@ -186,3 +186,14 @@ function getNum<T>(num : T):T{
 getNum<string>("77");
 getNum<number>(77);
 
+// Type combination
+type detailsOfUser = {
+    name : string;
+    age : number;
+}
+
+type detailsOfAdmin = detailsOfUser & {
+    role : string;
+}
+
+
