@@ -206,6 +206,22 @@ interface detailsOfAdmin extends detailsOfUser{
     role : string;
 }
 
+// enum type
+
+// enum StatusType {
+//     PENDING,
+//     COMPLETED,
+//     FAILED
+// }
+
+enum StatusType {
+    PENDING="Pending",
+    COMPLETED="Completed",
+    FAILED="Failed"
+}
+
+console.log(StatusType.COMPLETED);
+
 
 
 
