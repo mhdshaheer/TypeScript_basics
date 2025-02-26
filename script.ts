@@ -223,5 +223,31 @@ enum StatusType {
 console.log(StatusType.COMPLETED);
 
 
+// ========================= Discriminated Unions ====================================
+
+// ✅ Helps TypeScript automatically infer the correct type.
+// ✅ Makes it easier to handle different cases in a type-safe way.
+// ✅ Avoids runtime errors by enforcing strict type checks.
+
+type Shape = | {
+    shape:"rectangle";
+    width:number;
+    height:number
+}|{
+    shape:"circle";
+    radius:number
+}
+
+const forCircle:Shape = {
+    shape:"circle",
+    radius:5
+}
+const forRectangle:Shape = {
+    shape:"rectangle",
+    width:10,
+    height:5
+}
+
+
 
 
