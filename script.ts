@@ -229,6 +229,12 @@ console.log(StatusType.COMPLETED);
 // ✅ Makes it easier to handle different cases in a type-safe way.
 // ✅ Avoids runtime errors by enforcing strict type checks.
 
+// When to Use Discriminated Unions?
+// ✔ API Responses: Success/Error responses.
+// ✔ State Management: UI states (loading, error, success).
+// ✔ Event Handling: Different event types in a system.
+// ✔ Game Development: Player actions (attack, defend, run).
+
 type Shape = | {
     shape:"rectangle";
     width:number;
@@ -249,5 +255,15 @@ const forRectangle:Shape = {
 }
 
 
+// ================================== Index signature ==========================================
+
+type User = {
+    [a:string]:boolean
+}
+const userDetails: User = {
+    admin:true,
+    aged:true,
+    dead:false
+}
 
 
